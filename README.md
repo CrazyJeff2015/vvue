@@ -1,2 +1,4 @@
 # vvue
-vueJs mvvm原理的简单实现
+
+vueJs mvvm 原理的简单实现
+mvvm Model-View-ViewModel
