@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>VueJs原理的简单实现</title>
+  <style>
+    #app {
+      margin: 10px auto;
+      width: 400px;
+      padding: 200px;
+      text-align: center;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>VueJs原理的简单实现</h1>
+    <input v-model="txt" type="text">
+    <h3>{{txt}}</h1>
+  </div>
+
+  <script src="./js/observer.js"></script>
+  <script src="./js/watcher.js"></script>
+  <script src="./js/compiler.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    const vm = new Vvue({
+      el: "#app",
+      data: {
+        txt: "请修改"
+      }
+    });
+  </script>
+</body>
+
+</html>
